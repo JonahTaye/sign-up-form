@@ -24,10 +24,12 @@ body {
 
 .image-section {
     width: 40%;
+    display: flex;
+    position: relative;
 }
 
 .form-section {
-    padding: 1rem;
+    padding: 3rem 4rem;
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
@@ -35,6 +37,20 @@ body {
 
 .main-text {
     width: 50ch;
+}
+
+.image {
+    flex-grow: 1;
+    background-image: url(image/Formula\ 1\ header\ template\ \(35\).avif) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -200px;
+}
+
+.background-shadow {
+    width: 100%;
+    height: 10px;
+    position: absolute;
 }
 
 h1 {
