@@ -5,10 +5,16 @@
     /* border: 1px red solid; */
 }
 
+@font-face {
+    font-family: formula-1;
+    src: url(./ttfconversion/1f75a4dd429d77b6-s.p.ttf);
+}
+
 body {
     display: flex;
     height: 100vh;
     width: 100%;
+    font-family: formula-1;
 }
 
 .image-section {
