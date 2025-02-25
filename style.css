@@ -29,13 +29,16 @@ body {
 }
 
 .form-section {
+    flex-shrink: 1;
+    width: 60%;
     padding: 3rem 4rem;
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
 }
 
-.main-text {
+.main-text, .sub-text {
+    display: flex;
     width: 50ch;
 }
 
@@ -44,7 +47,6 @@ body {
     background-image: url(image/f1-ferrari.avif) ;
     background-size: cover;
     background-position-x: -250px;
-    opacity: 0.7;
 }
 
 .background-shadow {
@@ -57,11 +59,6 @@ body {
     background-color: rgba(0, 0, 0, 0.678);
     padding: 20px;
 }
-
-img {
-    opacity: 2;
-}
-
 
 h1 {
     font-family: f1-slanted;
@@ -97,7 +94,7 @@ input {
 label {
     opacity: 0;
     font-size: 0.7rem;
-    padding: 0.5rem;
+    padding: 0.2rem;
     border: 3px rgb(0, 0, 0) solid;
     border-radius: 8px;
     text-align: center;
