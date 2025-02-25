@@ -17,7 +17,7 @@
 
 body {
     display: flex;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     font-family: formula-1;
 }
@@ -92,6 +92,19 @@ input {
     border-radius: 5px;
 }
 
+input:focus {
+    box-shadow: 10px 5px 5px 0px #7F4241;
+    outline: black;
+}
+
+input:invalid {
+    border: 2px #FF1E00 solid;
+}
+
+input:valid {
+    border: 2px black solid;
+}
+
 input:focus::placeholder {
     visibility: hidden;
 }
@@ -125,6 +138,10 @@ label {
     transition: opacity 0.5s ease-in;
 }
 
+.button-login {
+    margin-top: 2rem;
+}
+
 button {
     font-family: formula-1;
     width: 10rem;
@@ -142,5 +159,9 @@ button:hover {
 
 button:active {
     padding-top: 0.2rem;
+}
+
+a {
+    color: #FF1E00;
 }
 
