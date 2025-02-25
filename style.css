@@ -135,4 +135,12 @@ button {
     color: white;
 }
 
+button:hover {
+    background-color: #911808;
+    cursor: pointer;
+}
+
+button:active {
+    padding-top: 0.2rem;
+}
 
