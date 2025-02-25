@@ -85,22 +85,37 @@ h1 {
 }
 
 input {
+    font-family: formula-1;
     width: 15rem;
     height: 3rem;
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 5px;
+}
+
+input:focus::placeholder {
+    visibility: hidden;
+}
+
+::placeholder {
+    font-family: formula-1;
 }
 
 label {
     opacity: 0;
     font-size: 0.7rem;
-    padding: 0.2rem;
+    padding: 0.25rem;
     border: 3px rgb(0, 0, 0) solid;
     border-radius: 8px;
     text-align: center;
     background-color: #FF1E00;
     color: white;
 
+}
+
+.first-name:has(input:not(:placeholder-shown)) label, .last-name:has(input:not(:placeholder-shown)) label,
+.email:has(input:not(:placeholder-shown)) label, .phone:has(input:not(:placeholder-shown)) label,
+.first-pass:has(input:not(:placeholder-shown)) label, .confirm-pass:has(input:not(:placeholder-shown)) label {
+    opacity: 1;
 }
 
 .first-name:focus-within label, .last-name:focus-within label,
