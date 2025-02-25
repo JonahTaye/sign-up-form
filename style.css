@@ -93,7 +93,7 @@ input {
 }
 
 input:focus {
-    box-shadow: 10px 5px 5px 0px #7F4241;
+    box-shadow: 5px 5px 5px 0px #7F4241;
     outline: black;
 }
 
